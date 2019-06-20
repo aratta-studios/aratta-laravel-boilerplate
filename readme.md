@@ -2,7 +2,7 @@
 <img height="300px" src="https://github.com/Esperlos/laravel_esperlos_boilerplate/blob/master/eperlos_laravel_logo.png?raw=true">
 </p>
 
-## Laravel Esperlos boilerplate
+## Aratta Laravel Boilerplate
 
 +CedarMapHelper for handling cedar map apis
 
@@ -31,7 +31,7 @@
 # Setup
 
 ```
-composer create-project --prefer-dist esperlos/laravel_esperlos_boilerplate ProjectName
+composer create-project --prefer-dist aratta-studios/aratta-laravel-boilerplate ProjectName
 cd ProjectName
 npm install
 php artisan jwt:secret

@@ -28,6 +28,8 @@
 
 +Jwt ready (maybe needed a few configs from this link: https://jwt-auth.readthedocs.io/en/develop/ )
 
++Data/Domain/Ui Based folder structure and boilerplate for vue 
+
 # Setup
 
 ```

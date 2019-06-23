@@ -106,25 +106,25 @@ export default {
 ');
         fclose($fp);
     }
-    $fr = fopen("./resources/js/store/index.js", 'rb');
-    if (FALSE === $fr) {
-        exit("Failed to open stream to URL");
-    }
-    $indexString = fread($fr,filesize("./resources/js/store/index.js"));
-    fclose($fr);
-    $fp = fopen("./resources/js/store/index.js", 'w');
-    $insertPos = strpos($indexString,"Vue.use(Vuex");
-    $modulesPos = strpos($indexString,"modules: {",273)+48;
-    $insertReplacement = "import ".$val["name"]." from './".$val["name"]."';
+//     $fr = fopen("./resources/js/store/index.js", 'rb');
+//     if (FALSE === $fr) {
+//         exit("Failed to open stream to URL");
+//     }
+//     $indexString = fread($fr,filesize("./resources/js/store/index.js"));
+//     fclose($fr);
+//     $fp = fopen("./resources/js/store/index.js", 'w');
+//     $insertPos = strpos($indexString,"Vue.use(Vuex");
+//     $modulesPos = strpos($indexString,"modules: {",273)+48;
+//     $insertReplacement = "import ".$val["name"]." from './".$val["name"]."';
 
-";
-    $modulesReplacement = "        ".$val["name"].",
-";
-    $count = 0;
-    $indexString = substr_replace($indexString,$insertReplacement,$insertPos,$count);
-    $indexString = substr_replace($indexString,$modulesReplacement,$modulesPos,$count);
-    fwrite($fp, $indexString);
-    fclose($fp);
+// ";
+//     $modulesReplacement = "        ".$val["name"].",
+// ";
+//     $count = 0;
+//     $indexString = substr_replace($indexString,$insertReplacement,$insertPos,$count);
+//     $indexString = substr_replace($indexString,$modulesReplacement,$modulesPos,$count);
+//     fwrite($fp, $indexString);
+//     fclose($fp);
 
 //    strpos()
 //    substr_replace()

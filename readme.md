@@ -1,5 +1,5 @@
 <p align="center">
-<img height="300px" src="https://github.com/Esperlos/laravel_esperlos_boilerplate/blob/master/eperlos_laravel_logo.png?raw=true">
+<img height="300px" src="https://github.com/aratta-studios/aratta-laravel-boilerplate/blob/master/logo.png?raw=true">
 </p>
 
 ## Aratta Laravel Boilerplate

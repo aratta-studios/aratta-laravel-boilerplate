@@ -29,9 +29,17 @@
 +Jwt ready (maybe needed a few configs from this link: https://jwt-auth.readthedocs.io/en/develop/ )
 
 +Data/Domain/Ui Based folder structure and boilerplate for vue 
-
+# Installer Setup
+Setup this installer to create your projects a little painless
+```
+composer global require aratta-studios/aratta-laravel
+```
 # Setup
-
+Create project using our installer:
+```
+aratta-laravel projectName
+```
+Or using by composer:
 ```
 composer create-project --prefer-dist aratta-studios/aratta-laravel-boilerplate ProjectName
 cd ProjectName
